@@ -14,6 +14,7 @@ RUN apk add --no-cache \
 WORKDIR /usr/app
 
 COPY ./package.json .
+COPY ./.env .
 
 RUN npm i
 

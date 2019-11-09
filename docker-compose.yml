@@ -5,8 +5,7 @@ services:
     ports:
     - 3000:3000
     volumes:
-    - .:/usr/app
-    - /usr/app/node_modules
+    - ./src:/usr/app/src
     networks:
     - graphql-poc
     command: npm run dev
