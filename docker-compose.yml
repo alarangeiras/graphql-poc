@@ -12,6 +12,8 @@ services:
     command: npm run dev
   mongo:
     image: mongo
+    ports:
+    - 27017:27017
     networks:
     - graphql-poc
 
